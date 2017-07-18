@@ -1,56 +1,71 @@
-body{
-	margin:0 0 0 0;
-	background-color: #000000;
-	font-size:1em;
-	color:#ffffff;
-	overflow:scroll;
-}
-a:link , a:visited{
-	color:#ffffff;
-}
-.class_day{
-	text-align:center;
-	width:99%;
-	
-	/*border-width:1px; border-style:solid;*/
-	overflow:hidden;
-}
-.class_times{
-	float:left; 
-	
-	width:50px;
-	margin-top:17px;
-	
-	
-}
-.class_times_hr{
-	height:119px;
-	border-width:1px;
-	border-bottom-style:dotted;
+* {
+  box-sizing: border-box;
 }
 
-.class_title_day{
-	background-color:#333333;
-	color:#ffffff;
-	font-size:0.8em;
-	width:100%;
+body {
+  margin: 0;
+  padding: 15px;
+  background-color: #000000;
+  font-size: 1em;
+  color: #ffffff;
+  overflow: scroll;
 }
-.class_title_room{
-	height:15px;
-	background-color:#333333;
-	color:#ffffff;
-	font-size:0.8em;
-	width:100%;
-}
-
-.class_room{
-	margin: 1px 1px 1px 1px;
-	border-width:1px; border-style:solid;
-	float:left; 
+a:link,
+a:visited {
+  color: #ffffff;
 }
 
-.class_sub{
-	background-color:#0000CC;
-	border-width:1px; border-style:solid;
-	font-size:0.8em;
+#source {
+  margin: 0 0 15px;
+}
+
+.class_day {
+  text-align: center;
+  width: 99%;
+
+  /*border-width:1px; border-style:solid;*/
+  overflow: hidden;
+}
+.class_times {
+  float: left;
+  width: 50px;
+  margin-top: 39px;
+}
+.class_times_hr {
+  height: 120px;
+  padding-top: 4px;
+  border-width: 0 0 1px;
+  border-style: dotted;
+}
+
+.class_times_hr:last-of-type {
+  border: none;
+}
+
+.class_title_day {
+  margin: 5px;
+  width: 100%;
+}
+.class_title_room {
+  padding: 10px 0;
+  background-color: #333333;
+  color: #ffffff;
+  width: 100%;
+}
+
+.class_room {
+  margin: 1px 1px 1px 1px;
+  border: 1px solid #333;
+  padding: 3px;
+  float: left;
+  zoom: 1;
+}
+
+.class_sub {
+  padding: 3px 3px 0;
+  border-bottom: 1px solid #333;
+  background: #666;
+  font-size: 0.8em;
+  line-height: 1.3;
+  overflow: hidden;
 }
