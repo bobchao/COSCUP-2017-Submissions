@@ -80,6 +80,12 @@ $(function () {
       // 放置議程空間
       $.each(d_room, function (v_room, d_sub) {
         $('#div_day_' + v_day).append('<div class="class_room" ref="' + v_room + '" id="div_day_' + v_day + '_room_' + v_room + '"><div class="class_title_room">' + v_room + '</div></div>');
+
+        // 排序議程
+        d_sub.sort(function (a, b) {
+          return a.time_start > b.time_start;
+        });
+
         // 放置議程資料
         $.each(d_sub, function (v, d) {
           $('#div_day_' + v_day + '_room_' + v_room).append('<div class="class_sub" ref="' + v + '" id="div_day_' + v_day + '_room_' + v_room + '_sub_' + v + '" ref_start="' + d['time_start'] + '" ref_end="' + d['time_end'] + '" title="[' + d['time'] + '] ' + d['subject'] + ' by ' + d['speaker'] + '">' + d['time'] + '<br>' + d['subject'] + '</div>'); //  + v + '' + d['subject'] // + d['subject'] + '<br>'
